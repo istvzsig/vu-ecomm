@@ -1,9 +1,10 @@
 nav.top-navigation-bar {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  top: 0;
+  top: 0px;
   transition: 700ms ease-in-out;
   background-color: rgba(0, 0, 0, 0.802);
   z-index: 10;

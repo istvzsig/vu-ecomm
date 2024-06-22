@@ -1,3 +1,7 @@
+<script setup>
+import SliderComponent from '../components/Slider/SliderComponent.vue'
+</script>
+
 <template>
-  <h1>Home View</h1>
+  <SliderComponent />
 </template>
