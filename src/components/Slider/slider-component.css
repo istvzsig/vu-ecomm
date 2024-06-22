@@ -1,14 +1,35 @@
 div.slider {
-  position: fixed;
-  width: 100%;
+  position: absolute;
+  width: 100vw;
   height: 100vh;
-  top: 60px;
+  top: 0;
   overflow: hidden;
-  background-color: red;
+  /* background-color: red; */
 }
 
 div.slider div.slider-item {
   position: absolute;
+  display: flex;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
   transition: 700ms ease-in-out;
-  background-color: blue;
+  /* background-color: blue; */
+}
+
+div.slider div.slider-item img.slider-item-background-image {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  /* transform: translateX(10%); */
+}
+
+div.slider div.slider-item h1.slider-item-text {
+  position: fixed;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20vw;
+  transform: translateY(-50%);
+  transform: translate3d(0, -50%, 0); /*GPU*/
+  z-index: 1;
 }
