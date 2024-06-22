@@ -17,6 +17,7 @@ nav.top-navigation-bar.scrolled {
 }
 
 img.top-navigation-bar--logo {
+  vertical-align: middle;
   height: 55px;
 }
 
