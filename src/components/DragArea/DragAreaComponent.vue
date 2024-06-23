@@ -31,16 +31,21 @@ const randomItem = getRandomItem()
       <div class="drag-area-sides-side"></div>
       <div class="drag-area-sides-side"></div>
     </div>
+
     <div @click="handleOnClick" @dragstart="handleDragStart" class="drag-area-item-card">
+      <h3 class="random-item-type-badge">{{ randomItem.type }}</h3>
       <!-- {{ getRandomItem().img }} -->
       <img :src="randomItem.img" alt="" />
-      <h1>{{ randomItem.name }}</h1>
-      <h4>{{ [...randomItem.text].splice(0, 100).join('') }}</h4>
-      <h1>
+      <h1 class="random-item-name">{{ randomItem.name }}</h1>
+      <h3 class="random-item-text">{{ [...randomItem.text].splice(0, 100).join('') }}</h3>
+      <h1 class="random-item-price">
         {{ randomItem.price }}
-        <span>USD</span>
+        <span class="random-item-price-currency">{{
+          randomItem.price === 'FREE' ? '' : 'USD'
+        }}</span>
       </h1>
-      {{ randomItem }}
+      <button class="random-item-add-to-cart-button">ADD TO CART</button>
+      <!-- {{ randomItem }} -->
     </div>
   </div>
 </template>
