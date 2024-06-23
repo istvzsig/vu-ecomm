@@ -9,7 +9,7 @@ div.slider {
 div.slider {
   display: flex;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
   justify-content: center;
   width: 100vw;
   height: 100vh;

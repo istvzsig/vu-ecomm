@@ -3,14 +3,14 @@ import { dummyData } from '@/data/dummyData'
 import { useSliderStore } from '@/stores/slider'
 import './slider.css'
 const slider = useSliderStore()
-slider.startAnimate()
+slider.startAnimation()
 
 const texts = ['Race', 'From', 'Another', 'Space']
 
 function animate() {
   return setTimeout(() => {
     slider.nextIndex = ++slider.value % dummyData.length
-    slider.stopAnimate()
+    slider.stopAnimation()
     slider.text = texts[slider.nextIndex].text
     setTimeout(animate, 4200)
   }, 4200)
