@@ -5,10 +5,10 @@ export const useSliderStore = defineStore('slider', {
     return { value: 0, nextIndex: 0, lenght: 3, animating: false, text: null }
   },
   actions: {
-    startAnimate() {
+    startAnimation() {
       this.animating = true;
     },
-    stopAnimate() {
+    stopAnimation() {
       this.animating = false;
     },
   },
