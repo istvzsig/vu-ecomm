@@ -8,7 +8,6 @@ import './reset.css'
   <header>
     <div class="wrapper">
       <NavbarComponent />
-      <SliderComponent />
     </div>
   </header>
 
