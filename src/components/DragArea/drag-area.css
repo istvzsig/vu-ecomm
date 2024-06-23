@@ -1,0 +1,54 @@
+:root {
+  --width: 80%;
+}
+
+div.drag-area {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 100px;
+  left: calc(var(--width) / 2 / 2 / 2);
+  width: var(--width);
+  height: calc(100vh - 200px);
+  background-color: rgba(245, 0, 0, 90%);
+  z-index: 2;
+}
+
+div.drag-area * {
+  text-align: center;
+}
+
+div.drag-area-sides {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+div.drag-area-sides-side {
+  width: var(--width);
+  height: 100%;
+  background-color: blue;
+}
+
+div.drag-area-sides-side:nth-child(2) {
+  background-color: red;
+}
+
+div.drag-area div.drag-area-item-card {
+  --offset: 1rem;
+  --width: calc(100% - calc(var(--offset) * 2));
+  --height: calc(100% - calc(var(--offset) * 2));
+  position: absolute;
+  top: 0;
+  left: calc(var(--width) / 2+ var(--offset) / 2);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.88);
+  z-index: 100;
+  cursor: url('../../assets/img/rocket.gif'), auto;
+  z-index: 100;
+  color: white;
+  /* display: none; */
+  /* margin: 1rem; */
+}
