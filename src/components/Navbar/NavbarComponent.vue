@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
-import './navbar-component.css'
+import './navbar.css'
 
 let isOpaque = ref(false)
 
