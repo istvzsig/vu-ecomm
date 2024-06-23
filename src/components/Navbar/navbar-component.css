@@ -7,9 +7,9 @@ nav.top-navigation-bar {
   top: 0px;
   transition: 700ms ease-in-out;
   background-color: rgba(0, 0, 0, 0.802);
-  z-index: 10;
   backdrop-filter: blur(5px);
-  padding: 0 1rem;
+  padding: 0 5vw;
+  z-index: 10;
 }
 
 nav.top-navigation-bar.scrolled {
@@ -18,7 +18,7 @@ nav.top-navigation-bar.scrolled {
 
 img.top-navigation-bar--logo {
   vertical-align: middle;
-  height: 55px;
+  height: 50px;
 }
 
 nav.top-navigation-bar ul {

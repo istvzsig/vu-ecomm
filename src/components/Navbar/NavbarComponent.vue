@@ -1,6 +1,17 @@
 <script setup>
+import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import './navbar-component.css'
+
+let isOpaque = ref(false)
+
+function animate() {
+  window.addEventListener('scroll', () => {
+    isOpaque.value = window.scrollY > 200
+  })
+  console.log(isOpaque.value)
+}
+animate()
 </script>
 <template>
   <nav class="top-navigation-bar">
