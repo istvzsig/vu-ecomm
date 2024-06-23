@@ -6,7 +6,7 @@ nav.top-navigation-bar {
   align-items: center;
   top: 0px;
   transition: 700ms ease-in-out;
-  background-color: rgba(0, 0, 0, 0.802);
+  background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(5px);
   padding: 0 5vw;
   z-index: 10;
