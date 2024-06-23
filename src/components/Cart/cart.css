@@ -1,0 +1,35 @@
+div.cart {
+  position: fixed;
+  width: 100vw;
+  max-width: 420px;
+  height: 100vh;
+  top: 100px;
+  right: 0;
+  padding: 5vw;
+  /* background-color: red; */
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.21);
+  backdrop-filter: blur(10px);
+  overflow: scroll;
+  transform: translateX(100%);
+  transition: 1000ms;
+}
+
+div.cart div.cart-item {
+  background-color: rgba(255, 0, 0, 0.306);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+}
+
+div.cart h1.cart-total-amount {
+  color: white;
+}
+
+div.cart p.cart-item-name {
+  color: white;
+  font-size: 10px;
+}
+
+div.cart.open {
+  transform: translateX(0);
+}

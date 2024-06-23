@@ -6,6 +6,7 @@ export const useCartStore = defineStore('slider', {
     return {
       items: store ? store : [],
       totalAmount: store ? store.length : 0,
+      isOpen: false
     }
   },
   actions: {
