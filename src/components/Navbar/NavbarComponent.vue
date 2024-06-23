@@ -2,8 +2,14 @@
 import { ref } from 'vue'
 import { RouterLink } from 'vue-router'
 import './navbar.css'
+import { useCartStore } from '@/stores/cart'
 
 let isOpaque = ref(false)
+const cart = useCartStore()
+
+function toggleCart() {
+  cart.isOpen = !cart.isOpen
+}
 
 function animate() {
   window.addEventListener('scroll', () => {
@@ -21,8 +27,8 @@ animate()
     <ul>
       <RouterLink to="/signin">Sign in</RouterLink>
       <RouterLink to="/wishlist">Wishlist</RouterLink>
-      <li class="navbar-cart-button">
-        <div className="navbar-cart-button--total-amount">11</div>
+      <li @click="toggleCart" class="navbar-cart-button">
+        <div className="navbar-cart-button--total-amount">{{ cart.totalAmount || 0 }}</div>
         <svg
           width="22"
           height="23"
