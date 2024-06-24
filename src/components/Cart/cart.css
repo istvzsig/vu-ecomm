@@ -12,7 +12,7 @@ div.cart {
   backdrop-filter: blur(10px);
   overflow: scroll;
   transform: translateX(100%);
-  transition: 1000ms;
+  transition: 420ms;
 }
 
 div.cart div.cart-item {
