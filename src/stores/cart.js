@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia';
 
-export const useCartStore = defineStore('slider', {
+export const useCartStore = defineStore('cart', {
   state: function () {
     const store = JSON.parse(window.sessionStorage.getItem('cart'));
     return {
